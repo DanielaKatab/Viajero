@@ -1,0 +1,13 @@
+﻿<!--
+      *********    NO MODIFIQUE ESTE ARCHIVO     *********
+      Este archivo se regenera mediante una herramienta de diseño.
+       Si realiza cambios en este archivo, puede causar errores.
+-->
+<SampleData:SampleDataSource xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataSource" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <SampleData:SampleDataSource.Collection>
+    <SampleData:Item Modificar_viaje="Aliquam integer" Consultar_viaje="Cras nam aenean mauris" imagen="/viajero.pascual;component/SampleData/SampleDataSource/SampleDataSource_Files/Editar2.png" Registrar_viaje="Nam class cras" />
+    <SampleData:Item Modificar_viaje="Cras class" Consultar_viaje="Sed dis" imagen="/viajero.pascual;component/SampleData/SampleDataSource/SampleDataSource_Files/img1238071310.png" Registrar_viaje="Curae sed dis duis" />
+    <SampleData:Item Modificar_viaje="Curae donec duis" Consultar_viaje="Est maecenas" imagen="/viajero.pascual;component/SampleData/SampleDataSource/SampleDataSource_Files/search_48x48.png" Registrar_viaje="Donec maecenas" />
+    <SampleData:Item Modificar_viaje="Quisque vivamus etiam fusce" Consultar_viaje="Aliquam duis nunc" imagen="/viajero.pascual;component/SampleData/SampleDataSource/SampleDataSource_Files/Editar2.png" Registrar_viaje="Est aliquam integer quisque" />
+  </SampleData:SampleDataSource.Collection>
+</SampleData:SampleDataSource>

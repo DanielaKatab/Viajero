@@ -1142,13 +1142,30 @@ Datos de un viatico</th>
 <tr>
 <th align="left" valign="top">Autores</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0002">
+Daniela Katab Montoya</a>
+<br />
+</li>
+<li>
+<a href="#STK-0003">
+Santiago Muñoz Echavarria</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
 <th align="left" valign="top">Fuentes</th>
 <td align="left" valign="top" colspan="2">
-<font color="red"><b>?</b></font>
+<ul>
+<li>
+<a href="#STK-0001">
+Sorey Garcia</a>
+<br />
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -1426,6 +1443,184 @@ Ninguno</td>
 </tr>
 </table>
 <p />
+<a name="UC-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Consultar viaje</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 30/10/2012 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Daniela Katab Montoya</a>
+<br />
+</li>
+<li>
+<a href="#STK-0003">
+Santiago Muñoz Echavarria</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Sorey Garcia</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el usuario solicita consultar la informacion  almacenada de un viaje
+<br />
+</em>
+    o durante la realización de los siguientes casos de uso:
+<a href="&#xA;                #UC-0002">
+           [UC-0002]
+           
+Modificar viaje</a>, <a href="&#xA;                #UC-0004">
+           [UC-0004]
+           
+Registrar viatico</a>, <a href="&#xA;                #UC-0007">
+           [UC-0007]
+           
+Eliminar viatico</a></td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0022" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+solicita al sistema consultar un viaje</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0067" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+muestra los viajes almacenados anteriormente</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0036" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona el viaje</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0024" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+muestra el viaje seleccionado por el usuario</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
 <a name="UC-0002" />
 <table border="1" width="100%">
 <tr bgcolor="#c8e0e0">
@@ -1491,13 +1686,23 @@ el usuario solicita modificar informacion almacenada anteriormente en un viaje
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="left" valign="top" rowspan="8">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<a name="STP-0016" />
+<a name="STP-0065" />
 <td align="center" valign="top">1</td>
+<td>
+    Se realiza el caso de uso
+<a href="&#xA;            #UC-0003">
+Consultar viaje
+        (UC-0003)
+    </a></td>
+</tr>
+<tr>
+<a name="STP-0016" />
+<td align="center" valign="top">2</td>
 <td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
 Usuario (ACT-0001)
     </a>
@@ -1507,7 +1712,7 @@ Solicita al sistema modificar un viaje existente</em>
 </tr>
 <tr>
 <a name="STP-0026" />
-<td align="center" valign="top">2</td>
+<td align="center" valign="top">3</td>
 <td>El
      
     sistema<em>
@@ -1516,7 +1721,7 @@ muestra la informacion de los viajes almacenados</em>
 </tr>
 <tr>
 <a name="STP-0018" />
-<td align="center" valign="top">3</td>
+<td align="center" valign="top">4</td>
 <td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
 Usuario (ACT-0001)
     </a>
@@ -1526,7 +1731,7 @@ Selecciona  el viaje a modificar</em>
 </tr>
 <tr>
 <a name="STP-0019" />
-<td align="center" valign="top">4</td>
+<td align="center" valign="top">5</td>
 <td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
 Usuario (ACT-0001)
     </a>
@@ -1536,7 +1741,7 @@ Ingresa el nuevo dato</em>
 </tr>
 <tr>
 <a name="STP-0023" />
-<td align="center" valign="top">5</td>
+<td align="center" valign="top">6</td>
 <td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
 Usuario (ACT-0001)
     </a>
@@ -1546,160 +1751,11 @@ Solicita  guardar la informacion</em>
 </tr>
 <tr>
 <a name="STP-0021" />
-<td align="center" valign="top">6</td>
+<td align="center" valign="top">7</td>
 <td>El
      
     sistema<em>
 almacena los cambios efectuados</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Postcondición</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Excepciones</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="2">Rendimiento</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Tiempo máximo</th>
-</tr>
-<tr>
-<td align="center" valign="top">
-                        -
-                    </td>
-<td>
-                        -
-                    </td>
-</tr>
-<tr>
-<th align="left" valign="top">Frecuencia esperada</th>
-<td colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Importancia</th>
-<td align="left" valign="top" colspan="2">importante</td>
-</tr>
-<tr>
-<th align="left" valign="top">Urgencia</th>
-<td align="left" valign="top" colspan="2">inmediatamente</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estado</th>
-<td align="left" valign="top" colspan="2">pendiente de validación</td>
-</tr>
-<tr>
-<th align="left" valign="top">Estabilidad</th>
-<td align="left" valign="top" colspan="2">alta</td>
-</tr>
-<tr>
-<th align="left" valign="top">Comentarios</th>
-<td align="left" valign="top" colspan="2">
-Ninguno</td>
-</tr>
-</table>
-<p />
-<a name="UC-0003" />
-<table border="1" width="100%">
-<tr bgcolor="#c8e0e0">
-<th align="left" valign="top">UC-0003</th>
-<th align="left" valign="top" width="100%" colspan="2">
-Consultar viaje</th>
-</tr>
-<tr>
-<th align="left" valign="top">Versión</th>
-<td align="left" valign="top" colspan="2">1.0
-            ( 30/10/2012 )
-        </td>
-</tr>
-<tr>
-<th align="left" valign="top">Autores</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0002">
-Daniela Katab Montoya</a>
-<br />
-</li>
-<li>
-<a href="#STK-0003">
-Santiago Muñoz Echavarria</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Fuentes</th>
-<td align="left" valign="top" colspan="2">
-<ul>
-<li>
-<a href="#STK-0001">
-Sorey Garcia</a>
-<br />
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Dependencias</th>
-<td align="left" valign="top" colspan="2">Ninguno</td>
-</tr>
-<tr>
-<th align="left" valign="top">Descripción</th>
-<td colspan="2">
-    El sistema deberá comportarse tal como se describe en el siguiente
-
-    caso de uso cuando
-<em>
-el usuario solicita consultar la informacion  almacenada de un viaje
-<br />
-</em>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top">Precondición</th>
-<td align="left" valign="top" colspan="2">
-<font color="red"><b>PD</b></font>
-</td>
-</tr>
-<tr>
-<th align="left" valign="top" rowspan="3">Secuencia normal</th>
-<th align="center" valign="top">Paso</th>
-<th align="left" valign="top" width="100%">Acción</th>
-</tr>
-<tr>
-<a name="STP-0022" />
-<td align="center" valign="top">1</td>
-<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
-Usuario (ACT-0001)
-    </a>
-<em>
-solicita al sistema consultar un viaje</em>
-</td>
-</tr>
-<tr>
-<a name="STP-0024" />
-<td align="center" valign="top">2</td>
-<td>El
-     
-    sistema<em>
- muestra los viajes almacenados anteriormente</em>
 </td>
 </tr>
 <tr>
@@ -1768,7 +1824,7 @@ Ninguno</td>
 <tr bgcolor="#c8e0e0">
 <th align="left" valign="top">UC-0004</th>
 <th align="left" valign="top" width="100%" colspan="2">
-Tomar foto</th>
+Registrar viatico</th>
 </tr>
 <tr>
 <th align="left" valign="top">Versión</th>
@@ -1826,13 +1882,33 @@ permite tomar una evidencia del viatico</em>
 </td>
 </tr>
 <tr>
-<th align="left" valign="top" rowspan="6">Secuencia normal</th>
+<th align="left" valign="top" rowspan="8">Secuencia normal</th>
 <th align="center" valign="top">Paso</th>
 <th align="left" valign="top" width="100%">Acción</th>
 </tr>
 <tr>
-<a name="STP-0030" />
+<a name="STP-0068" />
 <td align="center" valign="top">1</td>
+<td>
+    Se realiza el caso de uso
+<a href="&#xA;            #UC-0003">
+Consultar viaje
+        (UC-0003)
+    </a></td>
+</tr>
+<tr>
+<a name="STP-0041" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+tiene la posibilidad de tomar la evidencia de un viatico</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0030" />
+<td align="center" valign="top">3</td>
 <td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
 Usuario (ACT-0001)
     </a>
@@ -1842,7 +1918,7 @@ solicita tomar una foto</em>
 </tr>
 <tr>
 <a name="STP-0031" />
-<td align="center" valign="top">2</td>
+<td align="center" valign="top">4</td>
 <td>El
      
     sistema<em>
@@ -1851,7 +1927,7 @@ permite al usuario tomar una foto</em>
 </tr>
 <tr>
 <a name="STP-0035" />
-<td align="center" valign="top">3</td>
+<td align="center" valign="top">5</td>
 <td>El
      
     sistema<em>
@@ -1860,7 +1936,7 @@ muestra la foto tomada</em>
 </tr>
 <tr>
 <a name="STP-0032" />
-<td align="center" valign="top">4</td>
+<td align="center" valign="top">6</td>
 <td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
 Usuario (ACT-0001)
     </a>
@@ -1870,7 +1946,7 @@ tiene la posibilidad de almacenar o eliminar la foto tomada</em>
 </tr>
 <tr>
 <a name="STP-0033" />
-<td align="center" valign="top">5</td>
+<td align="center" valign="top">7</td>
 <td>El
      
     sistema<em>
@@ -1897,6 +1973,579 @@ valida la opcion ingresada por el usuario</em>
 <td>
                         -
                     </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0007</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Eliminar viatico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 20/11/2012 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Daniela Katab Montoya</a>
+<br />
+</li>
+<li>
+<a href="#STK-0003">
+Santiago Muñoz Echavarria</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Sorey Garcia</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el usuario solicita eliminar un viatico existente</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0066" />
+<td align="center" valign="top">1</td>
+<td>
+    Se realiza el caso de uso
+<a href="&#xA;            #UC-0003">
+Consultar viaje
+        (UC-0003)
+    </a></td>
+</tr>
+<tr>
+<a name="STP-0059" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona el viaje al cual le desea eliminar un viatico</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0060" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+muestra el viaje seleccionado con los viaticos almacenados</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0061" />
+<td align="center" valign="top">4</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+el usuario selecciona  un viatico</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0063" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona la opcion eliminar</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0064" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+elimina el viatico seleccionado</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0005</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Eliminar viaje</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 12/11/2012 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0002">
+Daniela Katab Montoya</a>
+<br />
+</li>
+<li>
+<a href="#STK-0003">
+Santiago Muñoz Echavarria</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Sorey Garcia</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el usuario solicita eliminar unviaje almacenado</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="6">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0042" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+solicita la opcion consultar un viaje</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0043" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+muestra los viajes almacenados</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0044" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona el viaje a eliminar </em>
+</td>
+</tr>
+<tr>
+<a name="STP-0071" />
+<td align="center" valign="top">4</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+solicita al sistema eliminar un viaje</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0072" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+elimina el viaje seleccionado</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Enviar correo electronico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 12/11/2012 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el usuario solicita enviar los datos almacenados de un viaje por correo electronico</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="10">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0048" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+solicita la opcion consultar  viaje
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0049" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+muestra los viajes almacenados</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0050" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona un viaje
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0051" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+muestra los datos almacenados de un viaje</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0052" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+selecciona la opcion enviar correo electronico</em>
+                                (<em>
+el icono del correo electronico es un sobre</em>)
+                            </td>
+</tr>
+<tr>
+<a name="STP-0053" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+solicita el correo destino</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0054" />
+<td align="center" valign="top">7</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que utiliza la aplicacion">
+Usuario (ACT-0001)
+    </a>
+<em>
+escribe el correo electronico</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0055" />
+<td align="center" valign="top">8</td>
+<td>El
+     
+    sistema<em>
+valida la informacion</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0056" />
+<td align="center" valign="top">9</td>
+<td>El
+     
+    sistema<em>
+envia el correo electronico a la direccion escrita</em>
+                                (<em>
+ejemplo: santiago0228@hotmail.com</em>)
+                            </td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0002" />
+<td align="center" valign="top">9</td>
+<td>Si<em>
+la informacion esta mal diligenciada el sistema muestra un mensaje solicitando ingresar de nuevo la direccion de correo electronico,
+                            </em>el
+     
+    sistema<em>
+<font color="red"><b>PD</b></font>
+</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
 </tr>
 <tr>
 <th align="left" valign="top" rowspan="2">Rendimiento</th>

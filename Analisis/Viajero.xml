@@ -684,6 +684,8 @@ Datos de un viatico</rem:name>
 <rem:day>20</rem:day>
 </rem:date>
 </rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
 <rem:comments>
 Ninguno</rem:comments>
 <rem:importance value = "IMV-0003"/>
@@ -851,91 +853,6 @@ Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
 <rem:useCase
- oid = "UC-0002">
-<rem:name>
-Modificar viaje</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2012</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders ="STK-0002 STK-0003 "/>
-<rem:sources stakeholders ="STK-0001 "/>
-<rem:comments>
-Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0002"/>
-<rem:status value = "STV-0004"/>
-<rem:stability value = "SBV-0004"/>
-<rem:triggeringEvent>
-el usuario solicita modificar informacion almacenada anteriormente en un viaje<br/></rem:triggeringEvent>
-<rem:precondition>
-<rem:tbd/></rem:precondition>
-<rem:postcondition>
-<rem:tbd/></rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
-<rem:step oid = "STP-0016">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-Solicita al sistema modificar un viaje existente</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0026">
-<rem:number>2</rem:number>
-<rem:systemAction>
-<rem:description>
-muestra la informacion de los viajes almacenados</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0018">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-Selecciona  el viaje a modificar</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0019">
-<rem:number>4</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-Ingresa el nuevo dato</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0023">
-<rem:number>5</rem:number>
-<rem:actorAction actor = "ACT-0001">
-<rem:description>
-Solicita  guardar la informacion</rem:description>
-</rem:actorAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0021">
-<rem:number>6</rem:number>
-<rem:systemAction>
-<rem:description>
-almacena los cambios efectuados</rem:description>
-</rem:systemAction>
-<rem:comments>
-Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase
  oid = "UC-0003">
 <rem:name>
 Consultar viaje</rem:name>
@@ -974,11 +891,119 @@ solicita al sistema consultar un viaje</rem:description>
 <rem:comments>
 Ninguno</rem:comments>
 </rem:step>
-<rem:step oid = "STP-0024">
+<rem:step oid = "STP-0067">
 <rem:number>2</rem:number>
 <rem:systemAction>
 <rem:description>
- muestra los viajes almacenados anteriormente</rem:description>
+muestra los viajes almacenados anteriormente</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0036">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+selecciona el viaje</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0024">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra el viaje seleccionado por el usuario</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0002">
+<rem:name>
+Modificar viaje</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+el usuario solicita modificar informacion almacenada anteriormente en un viaje<br/></rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0065">
+<rem:number>1</rem:number>
+<rem:useCaseAction useCase = "UC-0003"/><rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0016">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+Solicita al sistema modificar un viaje existente</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0026">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra la informacion de los viajes almacenados</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0018">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+Selecciona  el viaje a modificar</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0019">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+Ingresa el nuevo dato</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0023">
+<rem:number>6</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+Solicita  guardar la informacion</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0021">
+<rem:number>7</rem:number>
+<rem:systemAction>
+<rem:description>
+almacena los cambios efectuados</rem:description>
 </rem:systemAction>
 <rem:comments>
 Ninguno</rem:comments>
@@ -987,7 +1012,7 @@ Ninguno</rem:comments>
 <rem:useCase
  oid = "UC-0004">
 <rem:name>
-Tomar foto</rem:name>
+Registrar viatico</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1014,8 +1039,22 @@ permite tomar una evidencia del viatico</rem:triggeringEvent>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0030">
+<rem:step oid = "STP-0068">
 <rem:number>1</rem:number>
+<rem:useCaseAction useCase = "UC-0003"/><rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0041">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+tiene la posibilidad de tomar la evidencia de un viatico</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0030">
+<rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
 solicita tomar una foto</rem:description>
@@ -1024,7 +1063,7 @@ solicita tomar una foto</rem:description>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0031">
-<rem:number>2</rem:number>
+<rem:number>4</rem:number>
 <rem:systemAction>
 <rem:description>
 permite al usuario tomar una foto</rem:description>
@@ -1033,7 +1072,7 @@ permite al usuario tomar una foto</rem:description>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0035">
-<rem:number>3</rem:number>
+<rem:number>5</rem:number>
 <rem:systemAction>
 <rem:description>
 muestra la foto tomada</rem:description>
@@ -1042,7 +1081,7 @@ muestra la foto tomada</rem:description>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0032">
-<rem:number>4</rem:number>
+<rem:number>6</rem:number>
 <rem:actorAction actor = "ACT-0001">
 <rem:description>
 tiene la posibilidad de almacenar o eliminar la foto tomada</rem:description>
@@ -1051,13 +1090,291 @@ tiene la posibilidad de almacenar o eliminar la foto tomada</rem:description>
 Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0033">
-<rem:number>5</rem:number>
+<rem:number>7</rem:number>
 <rem:systemAction>
 <rem:description>
 valida la opcion ingresada por el usuario</rem:description>
 </rem:systemAction>
 <rem:comments>
 (ejemplo:guardar o eliminar)</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0007">
+<rem:name>
+Eliminar viatico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>11</rem:month>
+<rem:day>20</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+el usuario solicita eliminar un viatico existente</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0066">
+<rem:number>1</rem:number>
+<rem:useCaseAction useCase = "UC-0003"/><rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0059">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+selecciona el viaje al cual le desea eliminar un viatico</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0060">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra el viaje seleccionado con los viaticos almacenados</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0061">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+el usuario selecciona  un viatico</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0063">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+selecciona la opcion eliminar</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0064">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+elimina el viatico seleccionado</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0005">
+<rem:name>
+Eliminar viaje</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>11</rem:month>
+<rem:day>12</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 STK-0003 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+el usuario solicita eliminar unviaje almacenado</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0042">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita la opcion consultar un viaje</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0043">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra los viajes almacenados</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0044">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+selecciona el viaje a eliminar </rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0071">
+<rem:number>4</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita al sistema eliminar un viaje</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0072">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+elimina el viaje seleccionado</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0006">
+<rem:name>
+Enviar correo electronico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2012</rem:year>
+<rem:month>11</rem:month>
+<rem:day>12</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+el usuario solicita enviar los datos almacenados de un viaje por correo electronico</rem:triggeringEvent>
+<rem:precondition>
+<rem:tbd/></rem:precondition>
+<rem:postcondition>
+<rem:tbd/></rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0048">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+solicita la opcion consultar  viaje<br/></rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0049">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra los viajes almacenados</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0050">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+selecciona un viaje<br/></rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0051">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+muestra los datos almacenados de un viaje</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0052">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+selecciona la opcion enviar correo electronico</rem:description>
+</rem:actorAction>
+<rem:comments>
+el icono del correo electronico es un sobre</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0053">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+solicita el correo destino</rem:description>
+</rem:systemAction>
+<rem:comments>
+</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0054">
+<rem:number>7</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+escribe el correo electronico</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0055">
+<rem:number>8</rem:number>
+<rem:systemAction>
+<rem:description>
+valida la informacion</rem:description>
+</rem:systemAction>
+<rem:comments>
+</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0056">
+<rem:number>9</rem:number>
+<rem:systemAction>
+<rem:description>
+envia el correo electronico a la direccion escrita</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0002">
+<rem:condition>
+la informacion esta mal diligenciada el sistema muestra un mensaje solicitando ingresar de nuevo la direccion de correo electronico</rem:condition>
+<rem:systemAction>
+<rem:description>
+<rem:tbd/></rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+ejemplo: santiago0228@hotmail.com</rem:comments>
 </rem:step>
 </rem:useCase>
 </rem:section>
